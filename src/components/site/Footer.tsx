@@ -1,27 +1,22 @@
 import { EVENT } from "@/lib/event";
+import { CircuitN } from "./CircuitN";
 
 export function Footer() {
   return (
-    <footer className="mt-24 bg-ink text-ink-foreground">
-      <div className="mx-auto grid max-w-6xl gap-8 px-5 py-12 md:grid-cols-3">
-        <div>
-          <p className="font-display text-2xl text-gold">INVENTRON</p>
-          <p className="mt-2 text-sm opacity-75">{EVENT.tagline} · {EVENT.theme}</p>
-        </div>
-        <div className="text-sm opacity-85">
-          <p className="label-mono text-gold">Organised by</p>
-          <p className="mt-2">{EVENT.organizer}</p>
-          <p>{EVENT.institute}</p>
-          <p>{EVENT.university}</p>
-        </div>
-        <div className="text-sm opacity-85">
-          <p className="label-mono text-gold">When & where</p>
-          <p className="mt-2">{EVENT.dateLabel} · {EVENT.timeLabel}</p>
-          <p>{EVENT.venue}</p>
-        </div>
-      </div>
-      <div className="border-t border-ink-foreground/15 py-4 text-center text-xs opacity-60">
-        ॥ Jai Sri Gurudev ॥
+    <footer className="border-t border-border bg-surface">
+      <div className="mx-auto max-w-6xl px-5 py-10 text-center">
+        <p className="flex items-center justify-center gap-2 text-2xl font-bold text-primary">
+          {EVENT.name} {EVENT.year}
+          <CircuitN className="h-7 w-5 text-gold" />
+        </p>
+        <p className="mt-3 text-sm text-muted-foreground">
+          {EVENT.organizer}
+          <br />
+          {EVENT.institute} ({EVENT.instituteShort}), {EVENT.university}
+        </p>
+        <p className="mt-4 text-xs text-muted-foreground/80">
+          © 2026 {EVENT.name}. All rights reserved. · ॥ Jai Sri Gurudev ॥
+        </p>
       </div>
     </footer>
   );

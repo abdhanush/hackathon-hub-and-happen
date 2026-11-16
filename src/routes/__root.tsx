@@ -12,7 +12,6 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import { Header } from "../components/site/Header";
 import { Footer } from "../components/site/Footer";
 
 function NotFoundComponent() {
@@ -102,7 +101,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..800&family=Instrument+Sans:wght@400..700&family=JetBrains+Mono:wght@400;600&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;900&family=JetBrains+Mono:wght@800&display=swap",
       },
     ],
   }),
@@ -114,7 +113,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <head>
         <HeadContent />
       </head>
@@ -133,7 +132,6 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <div className="flex min-h-screen flex-col overflow-x-hidden">
-        <Header />
         <main className="flex-1">
           <Outlet />
         </main>
