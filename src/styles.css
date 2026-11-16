@@ -195,7 +195,7 @@
 
 @utility rise {
   opacity: 0;
-  animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+  animation: rise 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
 }
 
 @utility scroll-dot {

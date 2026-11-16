@@ -81,27 +81,26 @@ function Index() {
         </span>
 
         <h1
-          className="rise mt-8 flex flex-wrap items-center justify-center gap-x-4 text-5xl font-black leading-none sm:text-7xl lg:text-8xl"
-          style={{ animationDelay: "0.1s" }}
+          className="mt-8 flex flex-wrap items-center justify-center gap-x-4 text-5xl font-black leading-none sm:text-7xl lg:text-8xl"
         >
           <span className="text-gradient">{EVENT.name}</span>
           <span className="text-foreground">{EVENT.year}</span>
           <CircuitN className="h-12 w-9 text-gold sm:h-16 sm:w-12" />
         </h1>
 
-        <p className="rise mt-5 text-2xl text-muted-foreground sm:text-3xl" style={{ animationDelay: "0.2s" }}>
+        <p className="rise mt-5 text-2xl text-muted-foreground sm:text-3xl" style={{ animationDelay: "0.05s" }}>
           {EVENT.tagline}
         </p>
-        <p className="rise mt-2 text-2xl font-bold text-pink sm:text-4xl" style={{ animationDelay: "0.25s" }}>
+        <p className="rise mt-2 text-2xl font-bold text-pink sm:text-4xl" style={{ animationDelay: "0.1s" }}>
           "{EVENT.theme}"
         </p>
 
-        <div className="rise mt-12" style={{ animationDelay: "0.3s" }}>
+        <div className="rise mt-12" style={{ animationDelay: "0.15s" }}>
           <p className="label-mono mb-4 text-muted-foreground">Event starts in</p>
           <Countdown />
         </div>
 
-        <div className="rise mt-12 flex flex-wrap justify-center gap-4" style={{ animationDelay: "0.4s" }}>
+        <div className="rise mt-12 flex flex-wrap justify-center gap-4" style={{ animationDelay: "0.2s" }}>
           <RegisterButton />
           <a href="#details" className="btn-ghost">
             Learn More
@@ -110,7 +109,7 @@ function Index() {
 
         <div
           className="rise mt-16 grid w-full max-w-3xl grid-cols-2 gap-4 sm:grid-cols-4"
-          style={{ animationDelay: "0.5s" }}
+          style={{ animationDelay: "0.25s" }}
         >
           {stats.map((s) => (
             <div key={s.l} className="rounded-xl border border-border bg-card/70 px-4 py-4">
@@ -158,6 +157,10 @@ function Index() {
             <img
               src={campus.url}
               alt="Aerial view of the BGS Institute of Technology campus"
+              width={1280}
+              height={720}
+              loading="lazy"
+              decoding="async"
               className="aspect-[16/9] w-full object-cover"
             />
             <div className="absolute inset-x-4 bottom-4 rounded-lg border border-border bg-background/85 px-4 py-3 backdrop-blur">
