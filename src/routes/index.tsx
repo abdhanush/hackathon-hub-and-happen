@@ -16,7 +16,7 @@ import { CircuitN } from "@/components/site/CircuitN";
 import { Countdown } from "@/components/site/Countdown";
 import { RegisterButton } from "@/components/site/RegisterButton";
 import { EVENT } from "@/lib/event";
-import campus from "@/assets/bgsit-campus.jpg.asset.json";
+import campus from "@/assets/aerial-adichunchanagiri.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -156,7 +156,7 @@ function Index() {
           <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-glow-soft">
             <img
               src={campus.url}
-              alt="Aerial view of the BGS Institute of Technology campus"
+              alt="Aerial view of Adichunchanagiri University campus, home of BGS Institute of Technology"
               width={1280}
               height={720}
               loading="lazy"
