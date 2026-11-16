@@ -36,6 +36,7 @@
   --color-ring: var(--ring);
   --color-ring-offset-background: var(--background);
   --color-gold: var(--gold);
+  --color-bronze: var(--bronze);
   --color-glow: var(--glow);
   --color-pink: var(--pink);
   --color-surface: var(--surface);
@@ -77,6 +78,7 @@
   --glow: oklch(0.62 0.2 262);
   --pink: oklch(0.68 0.21 335);
   --gold: oklch(0.84 0.17 88);
+  --bronze: oklch(0.72 0.16 55);
   --ink: oklch(0.12 0.008 265);
   --ink-foreground: oklch(0.97 0.005 250);
   --destructive: oklch(0.6 0.22 25);

@@ -317,7 +317,7 @@ function Index() {
 const toneClass = {
   gold: "border-gold/60 bg-gold/10 text-gold shadow-glow",
   silver: "border-muted-foreground/40 bg-muted text-foreground",
-  bronze: "border-destructive/40 bg-destructive/10 text-destructive",
+  bronze: "border-bronze/40 bg-bronze/10 text-bronze",
 } as const;
 
 function PrizeCard({
