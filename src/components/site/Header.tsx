@@ -13,7 +13,7 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
         <Link to="/" className="flex items-center gap-2">
           <CircuitN className="h-8 w-6 text-secondary" />
-          <span className="font-display text-xl font-semibold tracking-tight text-primary">INVENTRON</span>
+          <span className="hidden font-display text-xl sm:inline font-semibold tracking-tight text-primary">INVENTRON</span>
         </Link>
         <nav className="flex items-center gap-1 text-sm font-medium">
           {links.map((l) => (

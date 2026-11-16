@@ -40,11 +40,11 @@ function Index() {
       <section className="bg-grid relative overflow-hidden">
         <div className="mx-auto grid max-w-6xl gap-12 px-5 pb-20 pt-14 md:grid-cols-[1.25fr_1fr] md:pt-20">
           <div>
-            <p className="label-mono rise text-secondary">NAIN 2.0 presents · Intra College Hackathon</p>
+            <p className="label-mono rise text-secondary">NAIN 2.0 presents · <br className="sm:hidden" />Intra College Hackathon</p>
             <div className="mt-6 flex items-center gap-4">
-              <CircuitN className="h-20 w-14 shrink-0 text-secondary sm:h-28 sm:w-20" />
+              <CircuitN className="h-14 w-10 shrink-0 text-secondary sm:h-28 sm:w-20" />
               <h1
-                className="rise font-display text-6xl font-bold leading-none text-primary sm:text-8xl"
+                className="rise font-display text-[13vw] font-bold leading-none text-primary sm:text-7xl lg:text-8xl"
                 style={{ animationDelay: "0.1s" }}
               >
                 INVENTRON
@@ -52,7 +52,7 @@ function Index() {
             </div>
             <p className="rise mt-6 max-w-lg text-lg text-muted-foreground" style={{ animationDelay: "0.2s" }}>
               Theme:{" "}
-              <span className="font-display text-2xl italic text-foreground">{EVENT.theme}</span>
+              <span className="block font-display text-2xl italic text-foreground sm:inline">{EVENT.theme}</span>
             </p>
             <div className="rise mt-8 flex flex-wrap gap-3" style={{ animationDelay: "0.3s" }}>
               <RegisterButton />
@@ -63,7 +63,7 @@ function Index() {
           </div>
 
           <div className="rise relative" style={{ animationDelay: "0.25s" }}>
-            <div className="rotate-2 rounded-3xl border-[1.5px] border-foreground bg-card p-3 shadow-pop">
+            <div className="rounded-3xl sm:rotate-2 border-[1.5px] border-foreground bg-card p-3 shadow-pop">
               <img
                 src={campus.url}
                 alt="Aerial view of the BGS Institute of Technology campus"
