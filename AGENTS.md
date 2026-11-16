@@ -31,3 +31,4 @@ use the editor.
 
 ## Project rules
 - Event facts (date, venue, theme, partners, registration link) live only in `src/lib/event.ts`; pages read from it so one edit updates the whole site.
+- The site is one long scrolling page (`src/routes/index.tsx`) with in-page section anchors, because the user asked to mirror a single-page reference site.
