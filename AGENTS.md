@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Event facts (date, venue, theme, partners, registration link) live only in `src/lib/event.ts`; pages read from it so one edit updates the whole site.
